@@ -1,0 +1,64 @@
+a {
+    color: rgb(248, 127, 127);
+    text-decoration:none; /*dont underline the hypelinks*/
+}
+
+a:hover{
+    color: red;
+    text-decoration: none ;
+}
+
+body {
+    /*set back, color, font, ect here*/
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: auto;
+    background-color: #ffffff;
+    color:rgb(146, 103, 103);
+    font-family: monospace;
+    text-align: center;
+}
+
+footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: red;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-weight: 1000;
+    font-style: italic;
+    color:rgb(255, 60, 60);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-style: italic;
+    color:rgb(250, 96, 96);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-weight: normal;
+    color: rgb(233, 108, 108);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
