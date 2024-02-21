@@ -39,7 +39,7 @@
                             lopHoc: prompt(`Class ${i + 1}`),
                             diemGPA: parseFloat(prompt(`GPA ${i + 1}`))
                         };
-                    } while (checkDuplicate(student.maSV));
+                    } while (checkDuplicate(student.maSV) || hasNullValues(student));
 
                     studentList.push(student);
                 }
@@ -48,13 +48,22 @@
                 displayStudentList();
             }
 
+            function hasNullValues(student) {
+                for (const key in student) {
+                    if (student[key] === null || student[key] === undefined) {
+                        return true;
+                    }
+                }
+                return false;
+            }
+
             function promptWithCheck(label, checkFunction) {
                 let userInput;
 
                 do {
                     userInput = prompt(label);
                     if (checkFunction(userInput)) {
-                        alert('Duplicate Student ID. Please enter a unique Student ID.');
+                        alert('Duplicate Student ID or invalid input. Please enter a unique Student ID.');
                     }
                 } while (checkFunction(userInput));
 
